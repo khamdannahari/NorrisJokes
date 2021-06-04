@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Chuck Norris\' Jokes</string>
+  <string name="failure_network_connection">No network connection</string>
+  <string name="failure_server_error">Server error</string>
+  <string name="failure_unknown_error">Unknown error: %1$s</string>
+  <string name="format_updated_at">Updated at %1$s</string>
+  <string name="search">Search</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/backgroundMain"
+  tools:context=".presentation.view.activity.MainActivity">
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    android:paddingEnd="12dp"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="RtlSymmetry"
+    tools:listitem="@layout/item_category" />
+
+  <ImageView
+    android:id="@+id/iv_icon"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginTop="100dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/rv_category"
+    tools:background="@color/black"
+    tools:ignore="ContentDescription" />
+
+  <TextView
+    android:id="@+id/tv_joke"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_marginTop="24dp"
+    android:gravity="center"
+    android:textSize="16sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/iv_icon"
+    tools:text="Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab_shuffle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="80dp"
+    android:layout_marginEnd="20dp"
+    android:background="@android:color/transparent"
+    android:src="@drawable/ic_shuffle"
+    app:backgroundTint="@color/primaryColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:rippleColor="@android:color/transparent"
+    tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
